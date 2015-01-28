@@ -4,12 +4,10 @@
         {"title": "About Us","href": "about.html","id": "link2"},
         {"title": "News","href": "#","id": "link3",
             "subsetLinks": [
-                {"title": "Local Stuff","href": "#"},
-                {"title": "World Crap","href": "#"},
-                {"title": "Recent Disasters (who cares)","href": "#"},
-                {"title": "Weird Deaths And Diseases (THE PURGE)","href": "#"},
-                {"title": "Signs the Apocalypse is Still Coming","href": "#"},
-                {"title": "ANARCHY!!!","href": "#"}
+                {"title": "Local Stuff","href": "localNews.html"},
+                {"title": "World Crap","href": "worldNews.html"},
+                {"title": "Weird Deaths And Diseases (THE PURGE)","href": "deathDisease.html"},
+                {"title": "ANARCHY!!!","href": "anarchy.html"}
             ]
         }
     ]
