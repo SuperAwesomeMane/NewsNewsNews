@@ -68,10 +68,31 @@ a {
     z-index: 1;
 }
 
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
 .introSection {
-    width: 30%;
-    height: auto;
-    font-size: ;
+    width: 25%;
+    height: 25%;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid #68E6E2;
+    border-radius: 5px;
+    color: white;
+    flex-grow: 1;
+}
+.mainIntro {
+    width: 100%;
 }
 
 /*BODY END*/
