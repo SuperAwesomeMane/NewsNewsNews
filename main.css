@@ -124,4 +124,16 @@ a {
  background-color: skyblue;
 }
 
+#ebola{
+ position: relative;
+ left: 150px;
+ top: 20px;
+}
+
+#ebolanews{
+    width: 465px;
+    position: relative;
+    left: 150px;
+    top: 0px;
+}
 /*BODY END*/
