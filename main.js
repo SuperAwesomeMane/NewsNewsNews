@@ -62,5 +62,45 @@ $(document).ready(function() {
             $("#subContainer3").slideToggle("fast");
             // $(".pageTitle").toggle("fast");
         });
-    }
+    };
+    
+    (function ($) {
+    "use strict";
+    var slideshow = (function () {
+        var counter = 0,
+            i,
+            j,
+            slides =  $("#slideshow .slide"),
+            slides2 = $("#slideshow .slide2"),
+            slidesLen2 = slides2.length-1,
+            slidesLen = slides.length - 1;
+        for (i = 0, j = 9999; i < slides.length; i += 1, j -= 1) {
+            $(slides[i]).css("z-index", j);
+            $(slides2[i]).css("z-index", j);
+        }
+        return {
+            startSlideshow: function () {
+                window.setInterval(function () {
+                    if (counter === 0) {
+                        slides.eq(counter).fadeOut();
+                        slides2.eq(counter).fadeOut();
+                        counter += 1;
+                    } else if (counter === slidesLen) {
+                        counter = 0;
+                        slides.eq(counter).fadeIn(function () {
+                            slides.fadeIn();
+                            slides2.fadeIn();
+                        });
+                    } else {
+                        slides.eq(counter).fadeOut();
+                        slides2.eq(counter).fadeOut();
+                        counter += 1;
+                    }
+                }, 5000);
+            }
+        };
+    }());
+    slideshow.startSlideshow();
+}(jQuery));
+
 });

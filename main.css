@@ -102,4 +102,26 @@ a {
     font-size: 24px;
 }
 
+#slideshow {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide{
+ width: 300px;
+ height: 300px;
+ position: absolute;
+ left: -500px;
+ top: 0px;
+}
+.slide2{
+ width: 300px;
+ position: absolute;
+ left: -500px;
+ top: 300px;
+ background-color: skyblue;
+}
+
 /*BODY END*/
