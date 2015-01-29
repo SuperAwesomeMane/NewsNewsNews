@@ -66,7 +66,12 @@ a {
 .newsLink {
     color: #1CEA83;
 }
-
+.newsLink:hover {
+    color: #ADED18;
+}
+.newsImage {
+    width: 80%;
+}
 .pageTitle {
     text-align: center;
     width: 100%;
@@ -100,6 +105,14 @@ a {
 .mainIntro {
     width: 100%;
     font-size: 24px;
+}
+.innerSection {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+}
+.innerSection {
+    background-color: none;
 }
 
 #slideshow {
