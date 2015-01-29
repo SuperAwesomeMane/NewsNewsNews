@@ -63,8 +63,15 @@ a {
 /*NAVIGATION END*/
 /*BODY START*/
 
+.newsLink {
+    color: #1CEA83;
+}
+
 .pageTitle {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     z-index: 1;
 }
 
@@ -75,16 +82,15 @@ a {
     flex-wrap: wrap;
     margin-top: 70px;
 }
-
 .introSection {
     width: 25%;
-    height: 25%;
+    height: auto;
     font-size: 18px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(0,0,0,0.5);
     border: 2px solid #68E6E2;
     border-radius: 5px;
@@ -93,6 +99,7 @@ a {
 }
 .mainIntro {
     width: 100%;
+    font-size: 24px;
 }
 
 /*BODY END*/
