@@ -58,9 +58,12 @@ $(document).ready(function() {
     function loadJquery() {
         $("#subContainer3").hide();
 
-        $("#link3").on("click", function() {
+        $("#link3").on("mouseover", function() {
             $("#subContainer3").slideToggle("fast");
-            // $(".pageTitle").toggle("fast");
+        });
+
+        $("#subContainer3").on("mouseleave", function() {
+            $("#subContainer3").slideToggle("fast");
         });
     };
 
