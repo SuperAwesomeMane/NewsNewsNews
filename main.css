@@ -120,6 +120,7 @@ a {
     height: 600px;
     margin: 0 auto;
     position: absolute;
+    top: 300px;
     background-color: rgba(0,0,0,0.5);
     border: 2px solid #68E6E2;
     border-radius: 5px;
