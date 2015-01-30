@@ -118,12 +118,9 @@ a {
     height: 600px;
     margin: 0 auto;
     position: absolute;
-<<<<<<< HEAD
     top: 300px;
     background-color: rgba(0,0,0,0.5);
-=======
     background-color: rgba(0, 0, 0, 0.5);
->>>>>>> 1125f9b1e820f5a78e85a2bf347fc54f3c76c358
     border: 2px solid #68E6E2;
     border-radius: 5px;
     color: white;
@@ -172,7 +169,7 @@ a {
 }
 #Crazy {
     position: absolute;
-    top: 400px;
+    top: 390px;
     left: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #68E6E2;
@@ -185,8 +182,8 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    top: 566px;
-    left: 1030px;
+    top: 750px;
+    left: 730px;
 }
 #ZombieT {
     background-color: rgba(0, 0, 0, 0.5);
@@ -194,9 +191,9 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    top: 905px;
+    top: 1090px;
     width: 650px;
-    left: 1025px;
+    left: 724px;
 }
 #pic2 {
     background-color: skyblue;
@@ -205,8 +202,8 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    left: 900px;
-    top: 100;
+    left: 610px;
+    top: 300px;
     height: 912px;
     width: 900px;
 }
