@@ -39,9 +39,28 @@ var weatherApp = function () {
         parseForecast: function (forecastObject) {
             var forecastSection = document.createElement("section");
             forecastSection.setAttribute("class", "forecast");
-            var rain = document.createElement("span");
-            rain.textContent = "Rain: " + forecastObject.rain;
-            forecastSection.appendChild(rain);
+
+            var weather = document.createElement("section");
+            var weatherDescription = document.createElement("span");
+            var weatherImage = document.createElement("img");
+            weatherImage.setAttribute('src', 'http://openweathermap.org/img/w/' + forecastObject.weather[0].icon + '.png');
+            weather.appendChild(weatherImage);
+
+            weatherDescription.textContent = "Weather: " + forecastObject.weather[0].description;
+            weather.appendChild(weatherDescription);
+            forecastSection.appendChild(weather);
+
+            var maxTemp = document.createElement("span");
+            maxTemp.textContent = "High Temperature: " + forecastObject.temp.max;
+            forecastSection.appendChild(maxTemp);
+
+            var minTemp = document.createElement("span");
+            minTemp.textContent = "Low Temperature: " + forecastObject.temp.min;
+            forecastSection.appendChild(minTemp);
+
+            var windSpeed = document.createElement("span");
+            windSpeed.textContent = "Wind Speed: " + forecastObject.speed;
+            forecastSection.appendChild(windSpeed);
 
             return forecastSection;
         },
