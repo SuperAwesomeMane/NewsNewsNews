@@ -76,7 +76,7 @@ $(document).ready(function() {
                 slides2 = $("#slideshow .slide2"),
                 slidesLen2 = slides2.length - 1,
                 slidesLen = slides.length - 1;
-            for (i = 0, j = 9999; i < slides.length; i += 1, j -= 1) {
+            for (i = 0, j = 100; i < slides.length; i += 1, j -= 1) {
                 $(slides[i]).css("z-index", j);
                 $(slides2[i]).css("z-index", j);
             }
