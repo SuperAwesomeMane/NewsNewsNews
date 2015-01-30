@@ -63,8 +63,20 @@ a {
 /*NAVIGATION END*/
 /*BODY START*/
 
+.newsLink {
+    color: #1CEA83;
+}
+.newsLink:hover {
+    color: #ADED18;
+}
+.newsImage {
+    width: 80%;
+}
 .pageTitle {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     z-index: 1;
 }
 
@@ -75,16 +87,15 @@ a {
     flex-wrap: wrap;
     margin-top: 70px;
 }
-
 .introSection {
     width: 25%;
-    height: 25%;
+    height: auto;
     font-size: 18px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(0,0,0,0.5);
     border: 2px solid #68E6E2;
     border-radius: 5px;
@@ -93,6 +104,49 @@ a {
 }
 .mainIntro {
     width: 100%;
+    font-size: 24px;
+}
+.innerSection {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+}
+.innerSection {
+    background-color: none;
 }
 
+#slideshow {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide{
+ width: 300px;
+ height: 300px;
+ position: absolute;
+ left: -500px;
+ top: 0px;
+}
+.slide2{
+ width: 300px;
+ position: absolute;
+ left: -500px;
+ top: 300px;
+ background-color: skyblue;
+}
+
+#ebola{
+ position: relative;
+ left: 150px;
+ top: 20px;
+}
+
+#ebolanews{
+    width: 465px;
+    position: relative;
+    left: 150px;
+    top: 0px;
+}
 /*BODY END*/
