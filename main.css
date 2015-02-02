@@ -140,11 +140,12 @@ a {
     flex-grow: 1;
 }
 #slideshow {
-    width: 600px;
+    width: 30%;
     height: 600px;
     margin: 0 auto;
     position: absolute;
     top: 400px;
+    left: 30px;
     background-color: rgba(0,0,0,0.5);
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #68E6E2;
@@ -152,10 +153,10 @@ a {
     color: white;
 }
 .slide {
-    width: 400px;
+    width: 75%;
     height: 400px;
     position: absolute;
-    left: 100px;
+    left: 80px;
     top: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #68E6E2;
@@ -163,10 +164,10 @@ a {
     color: white;
 }
 .slide2 {
-    width: 400px;
+    width: 75%;
     position: absolute;
-    left: 100px;
-    top: 400px;
+    left: 80px;
+    top: 420px;
     background-color: skyblue;
     background-color: rgba(0, 0, 0, 1);
     border: 2px solid #68E6E2;
@@ -174,7 +175,7 @@ a {
     color: white;
 }
 .slide3 {
-    width: 163px;
+    width: 30%;
     position: absolute;
     left: 220px;
     top: 0px;
@@ -203,7 +204,7 @@ a {
     border: 2px solid #68E6E2;
     border-radius: 5px;
     color: white;
-    width: 400px;
+    width: 35%;
     height: 400px;
     }
 #Crazy {
@@ -214,7 +215,7 @@ a {
     border: 2px solid #68E6E2;
     border-radius: 5px;
     color: white;
-    width: 400px;
+    width: 35%;
 }
 
 #Killer{
@@ -236,8 +237,8 @@ a {
     color: white;
     position: absolute;
     top: 505px;
-    left: 1200px;
-    width: 700px;
+    left: 1230px;
+    width: 30%;
     height: 400px;
 }
 #ZombieT {
@@ -247,8 +248,8 @@ a {
     color: white;
     position: absolute;
     top: 895px;
-    width: 700px;
-    left: 1200px;
+    width: 35%;
+    left: 1180px;
 }
 #pic2 {
     background-color: skyblue;
@@ -257,7 +258,7 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    left: 710px;
+    left: 680px;
     top: 400px;
     height: 600px;
     width: 1200px;
