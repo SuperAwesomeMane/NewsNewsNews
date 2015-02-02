@@ -78,6 +78,7 @@ a {
     margin: 0 auto;
     padding: 0;
     z-index: 1;
+    color: navy;
 }
 .mainContent {
     display: flex;
@@ -97,7 +98,7 @@ a {
     margin-right: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
     flex-grow: 1;
@@ -113,6 +114,28 @@ a {
 }
 .innerSection {
     background-color: none;
+}
+.aboutIntro {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.innerAbout {
+    width: 50%;
+}
+.aboutBody {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.aboutBody h2 {
+    width: 100%;
+}
+.crewImage {
+    width: 40%;
+    margin: 10;
+    flex-grow: 1;
 }
 #slideshow {
     width: 600px;
