@@ -171,6 +171,17 @@ a {
     border-radius: 5px;
     color: white;
 }
+.slide3 {
+    width: 163px;
+    position: absolute;
+    left: 220px;
+    top: 0px;
+    background-color: skyblue;
+    background-color: rgba(0, 0, 0, 1);
+    border: 2px solid #68E6E2;
+    border-radius: 5px;
+    color: #1CEA83;
+}
 #ebola {
     position: relative;
     left: 150px;
@@ -184,21 +195,37 @@ a {
 }
 #women {
     position: absolute;
-    left: 135px;
-    top: 0px;
+    left: 35px;
+    top: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #68E6E2;
     border-radius: 5px;
     color: white;
-}
+    width: 400px;
+    height: 400px;
+    }
 #Crazy {
     position: absolute;
-    top: 390px;
-    left: 100px;
+    top: 490px;
+    left: 35px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #68E6E2;
     border-radius: 5px;
     color: white;
+    width: 400px;
+}
+
+#Killer{
+ position: absolute;
+ left: 150px;
+ color: #1CEA83;
+}
+
+#Pet{
+ position: absolute;
+ top: 400px;
+ left: 1450;
+ color: #1CEA83;
 }
 #Cat {
     background-color: rgba(0, 0, 0, 0.5);
@@ -206,8 +233,10 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    top: 850px;
-    left: 730px;
+    top: 505px;
+    left: 1200px;
+    width: 700px;
+    height: 400px;
 }
 #ZombieT {
     background-color: rgba(0, 0, 0, 0.5);
@@ -215,9 +244,9 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    top: 1190px;
-    width: 650px;
-    left: 724px;
+    top: 895px;
+    width: 700px;
+    left: 1200px;
 }
 #pic2 {
     background-color: skyblue;
@@ -226,10 +255,10 @@ a {
     border-radius: 5px;
     color: white;
     position: absolute;
-    left: 610px;
+    left: 710px;
     top: 400px;
-    height: 912px;
-    width: 900px;
+    height: 600px;
+    width: 1200px;
 }
 #pic3 {
     background-color: skyblue;
