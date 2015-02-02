@@ -122,6 +122,8 @@ a {
 }
 .innerAbout {
     width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .aboutBody {
     width: 100%;
