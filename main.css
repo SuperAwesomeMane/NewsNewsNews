@@ -79,6 +79,7 @@ a {
     padding: 0;
     z-index: 1;
     color: navy;
+    margin-top: 40px;
     margin-bottom: -30px;
 }
 .mainContent {
@@ -86,7 +87,7 @@ a {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     margin-bottom: 70px;
 }
 .introSection {
@@ -107,6 +108,7 @@ a {
 .mainIntro {
     width: 100%;
     font-size: 24px;
+    margin-bottom: 0px;
 }
 .innerSection {
     display: flex;
