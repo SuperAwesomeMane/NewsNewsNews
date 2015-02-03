@@ -195,17 +195,7 @@ a {
     border-radius: 5px;
     color: #1CEA83;
 }
-#ebola {
-    position: relative;
-    left: 150px;
-    top: 20px;
-}
-#ebolanews {
-    width: 30%;
-    position: relative;
-    left: 150px;
-    top: 0px;
-}
+
 #women {
     position: absolute;
     left: 35px;

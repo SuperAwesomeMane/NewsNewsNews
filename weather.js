@@ -42,7 +42,7 @@ var weatherApp = function () {
 
             var weather = document.createElement("section");
             weather.setAttribute("class", "weatherDescriptor");
-            var weatherDescription = document.createElement("span");
+            var weatherDescription = document.createElement("p");
             var weatherImage = document.createElement("img");
             weatherImage.setAttribute('src', 'http://openweathermap.org/img/w/' + forecastObject.weather[0].icon + '.png');
             weather.appendChild(weatherImage);
@@ -51,16 +51,29 @@ var weatherApp = function () {
             weather.appendChild(weatherDescription);
             forecastSection.appendChild(weather);
 
-            var maxTemp = document.createElement("p");
-            maxTemp.textContent = "High Temp: " + forecastObject.temp.max;
-            forecastSection.appendChild(maxTemp);
+            //            var maxTemp = document.createElement("p");
+            //            maxTemp.textContent = "High Temp: " + forecastObject.temp.max;
+            //            forecastSection.appendChild(maxTemp);
+            //
+            //            var minTemp = document.createElement("p");
+            //            minTemp.textContent = "Low Temp: " + forecastObject.temp.min;
+            //            forecastSection.appendChild(minTemp);
 
-            var minTemp = document.createElement("p");
-            minTemp.textContent = "Low Temp: " + forecastObject.temp.min;
-            forecastSection.appendChild(minTemp);
+            var dayTemp = document.createElement("p");
+            dayTemp.textContent = "Day Temperature: ";
+            var subTemp = document.createElement("p");
+            subTemp.textContent = forecastObject.temp.day + "°";
+            dayTemp.appendChild(subTemp);
+
+            forecastSection.appendChild(dayTemp);
 
             var windSpeed = document.createElement("p");
-            windSpeed.textContent = "Wind Speed: " + forecastObject.speed;
+            windSpeed.textContent = "Wind Speed: ";
+
+            var subSpeed = document.createElement("p");
+            subSpeed.textContent = forecastObject.speed;
+            windSpeed.appendChild(subSpeed);
+
             forecastSection.appendChild(windSpeed);
 
             return forecastSection;
