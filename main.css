@@ -137,10 +137,16 @@ a {
 .aboutBody h2 {
     width: 100%;
 }
-.crewImage {
-    width: 40%;
+.crewDiv {
+    width: 20%;
     margin: 10;
     flex-grow: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.crewImage {
+    width: 90%;
+    border: 3px solid black;
 }
 #slideshow {
     width: 30%;
