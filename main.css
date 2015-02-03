@@ -79,6 +79,7 @@ a {
     padding: 0;
     z-index: 1;
     color: navy;
+    margin-bottom: -30px;
 }
 .mainContent {
     display: flex;
@@ -148,7 +149,7 @@ a {
     left: 30px;
     background-color: rgba(0,0,0,0.5);
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
 }
@@ -159,7 +160,7 @@ a {
     left: 80px;
     top: 100px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
 }
@@ -170,7 +171,7 @@ a {
     top: 420px;
     background-color: skyblue;
     background-color: rgba(0, 0, 0, 1);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
 }
@@ -201,7 +202,7 @@ a {
     left: 35px;
     top: 100px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
     width: 35%;
@@ -212,7 +213,7 @@ a {
     top: 490px;
     left: 35px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
     width: 35%;
@@ -232,7 +233,7 @@ a {
 }
 #Cat {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
     position: absolute;
@@ -243,30 +244,31 @@ a {
 }
 #ZombieT {
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
     position: absolute;
     top: 895px;
-    width: 35%;
-    left: 1100px;
+    width: 30%;
+    right: 0px;
+    margin-right: 122px;
 }
 #pic2 {
     background-color: skyblue;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid black;
     border-radius: 5px;
     color: white;
     position: absolute;
-    left: 640px;
+    left: 620px;
     top: 400px;
-    height: 600px;
-    width: 60%;
+    height: 630px;
+    width: 64%;
+    margin-bottom: 50px;
 }
 #pic3 {
     background-color: skyblue;
     background-color: rgba(0, 0, 0, 1);
-    border: 2px solid #68E6E2;
     border-radius: 5px;
     color: white;
 }
