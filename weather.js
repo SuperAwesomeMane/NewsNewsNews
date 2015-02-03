@@ -41,24 +41,25 @@ var weatherApp = function () {
             forecastSection.setAttribute("class", "forecast");
 
             var weather = document.createElement("section");
+            weather.setAttribute("class", "weatherDescriptor");
             var weatherDescription = document.createElement("span");
             var weatherImage = document.createElement("img");
             weatherImage.setAttribute('src', 'http://openweathermap.org/img/w/' + forecastObject.weather[0].icon + '.png');
             weather.appendChild(weatherImage);
 
-            weatherDescription.textContent = "Weather: " + forecastObject.weather[0].description;
+            weatherDescription.textContent = forecastObject.weather[0].description;
             weather.appendChild(weatherDescription);
             forecastSection.appendChild(weather);
 
-            var maxTemp = document.createElement("span");
-            maxTemp.textContent = "High Temperature: " + forecastObject.temp.max;
+            var maxTemp = document.createElement("p");
+            maxTemp.textContent = "High Temp: " + forecastObject.temp.max;
             forecastSection.appendChild(maxTemp);
 
-            var minTemp = document.createElement("span");
-            minTemp.textContent = "Low Temperature: " + forecastObject.temp.min;
+            var minTemp = document.createElement("p");
+            minTemp.textContent = "Low Temp: " + forecastObject.temp.min;
             forecastSection.appendChild(minTemp);
 
-            var windSpeed = document.createElement("span");
+            var windSpeed = document.createElement("p");
             windSpeed.textContent = "Wind Speed: " + forecastObject.speed;
             forecastSection.appendChild(windSpeed);
 

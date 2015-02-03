@@ -1,0 +1,21 @@
+.weatherSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.forecast {
+    display: flex;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #68E6E2;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2px;
+}
+
+.forecast > p {}
+
+.weatherDescriptor {
+    margin-right: 2px;
+}
