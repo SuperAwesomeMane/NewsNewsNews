@@ -263,15 +263,12 @@ a {
     position: absolute;
     left: 620px;
     top: 400px;
-<<<<<<< HEAD
     height: 600px;
     width: 60%;
     
-=======
     height: 630px;
     width: 64%;
     margin-bottom: 50px;
->>>>>>> 146db8eb99bb74568ab7a5b460d2ef1498c80d1a
 }
 #pic3 {
     background-color: skyblue;

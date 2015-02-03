@@ -1,83 +1,83 @@
 $(document).ready(function() {
 
-    var links;
+        var links;
 
-    $.ajax({
-        url: 'nav.json',
-        dataType: 'json',
-        success: function(resp) {
-            links = resp.links;
+        $.ajax({
+            url: 'nav.json',
+            dataType: 'json',
+            success: function(resp) {
+                links = resp.links;
 
-            var html = [];
-            for (var i = 0; i < links.length; i++) {
-                var link = links[i];
-                var $li =
-                    $("<li><a /><ul class='subLinks" + (i + 1) + "' id='subContainer" + (i + 1) + "'></ul></li>")
-                    .find("a").html(link.title)
-                    .attr({
-                        "title": link.title,
-                        "href": link.href,
-                        "id": link.id,
-                        "tabColor": link.tabColor
-                    })
-                    .end();
-                html.push($li);
+                var html = [];
+                for (var i = 0; i < links.length; i++) {
+                    var link = links[i];
+                    var $li =
+                        $("<li><a /><ul class='subLinks" + (i + 1) + "' id='subContainer" + (i + 1) + "'></ul></li>")
+                        .find("a").html(link.title)
+                        .attr({
+                            "title": link.title,
+                            "href": link.href,
+                            "id": link.id,
+                            "tabColor": link.tabColor
+                        })
+                        .end();
+                    html.push($li);
+                }
+                $("#container").append(html);
+                getSubLinks();
+
+            },
+            error: function(req, status, err) {
+                console.log('something went wrong', status, err);
             }
-            $("#container").append(html);
-            getSubLinks();
-
-        },
-        error: function(req, status, err) {
-            console.log('something went wrong', status, err);
-        }
-    });
-
-    function getSubLinks() {
-        for (var i = 2; i < links.length; i++) {
-            var subHtml = [];
-
-            for (var j = 0; j < links[i].subsetLinks.length; j++) {
-
-                var subLink = links[i].subsetLinks[j];
-                var $subLi = $("<li><a /></li>").find("a")
-                    .html(subLink.title)
-                    .attr({
-                        "title": subLink.title,
-                        "href": subLink.href
-                            // "target": "_blank"
-                    })
-                    .end();
-                subHtml.push($subLi);
-            }
-            $("#subContainer" + (i + 1)).append(subHtml);
-        }
-
-        loadJquery();
-    };
-
-    function loadJquery() {
-        $("#subContainer3").hide();
-
-        $("#link3").on("mouseover", function() {
-            $("#subContainer3").slideToggle("fast");
         });
-    }
+
+        function getSubLinks() {
+            for (var i = 2; i < links.length; i++) {
+                var subHtml = [];
+
+                for (var j = 0; j < links[i].subsetLinks.length; j++) {
+
+                    var subLink = links[i].subsetLinks[j];
+                    var $subLi = $("<li><a /></li>").find("a")
+                        .html(subLink.title)
+                        .attr({
+                            "title": subLink.title,
+                            "href": subLink.href
+                                // "target": "_blank"
+                        })
+                        .end();
+                    subHtml.push($subLi);
+                }
+                $("#subContainer" + (i + 1)).append(subHtml);
+            }
+
+            loadJquery();
+        };
+
+        function loadJquery() {
+            $("#subContainer3").hide();
+
+            $("#link3").on("mouseover", function() {
+                $("#subContainer3").slideToggle("fast");
+            });
+        }
 
 
-    $("#worldNews-slideshow > div:gt(0)").hide();
+        $("#worldNews-slideshow > div:gt(0)").hide();
 
-    setInterval(function() {
-        $("#worldNews-slideshow > div:first").fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo("#worldNews-slideshow");
-    }, 3000);
+        setInterval(function() {
+            $("#worldNews-slideshow > div:first").fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo("#worldNews-slideshow");
+        }, 3000);
 
         $("#subContainer3").on("mouseleave", function() {
             $("#subContainer3").slideToggle("fast");
         });
-    };
+    }
 
     // SLIDESHOW FUNCTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -89,7 +89,7 @@ $(document).ready(function() {
                 j,
                 slides = $("#slideshow .slide"),
                 slides2 = $("#slideshow .slide2"),
-                slides3 = $("#slideshow .slide3" ),
+                slides3 = $("#slideshow .slide3"),
                 slidesLen2 = slides2.length - 1,
                 slidesLen = slides.length - 1,
                 slideLen = slides3.length - 1;
@@ -124,8 +124,8 @@ $(document).ready(function() {
             };
         }());
         slideshow.startSlideshow();
-    }(jQuery));
+    }(jQuery))
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-});
+);
