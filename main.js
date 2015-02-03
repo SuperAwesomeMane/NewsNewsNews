@@ -61,6 +61,9 @@ $(document).ready(function() {
             $("#link3").on("mouseover", function() {
                 $("#subContainer3").slideToggle("fast");
             });
+            $("#subContainer3").on("mouseleave", function(){
+                $("#subContainer3").slideToggle("fast");
+            })
         }
 
 
