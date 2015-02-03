@@ -63,4 +63,16 @@ $(document).ready(function() {
             // $(".pageTitle").toggle("fast");
         });
     }
+
+
+    $("#worldNews-slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $("#worldNews-slideshow > div:first").fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo("#worldNews-slideshow");
+    }, 3000);
+
 });
