@@ -76,9 +76,10 @@ a {
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .introSection {
-    width: 25%;
+    width: 30%;
     height: auto;
     font-size: 18px;
     margin-top: 50px;
@@ -91,5 +92,20 @@ a {
     border-radius: 5px;
     color: white;
     flex-grow: 1;
+    text-align: center;
+}
+iframe {
+    width: 80%;
+    height: 315px;
+}
+.newsLink {
+    color: #1CEA83;
+    font-size: 24px;
+}
+.newsLink:hover {
+    color: #ADED18;
+}
+.newsImage {
+    width: 70%;
 }
 /*BODY END*/

@@ -115,6 +115,19 @@ a {
     width: 40%;
     flex-wrap: wrap;
 }
+.rss {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.rss a {
+    color: #9EF5F5;
+}
+.rss a:hover {
+    color: #F2822F;
+}
+.rss a:active {
+    color: #F83232;
+}
 .innerSection {
     background-color: none;
 }
@@ -126,7 +139,7 @@ a {
 .innerAbout {
     width: 50%;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 160px;
 }
 .aboutBody {
     width: 100%;
