@@ -13,11 +13,16 @@ a {
     text-decoration: none;
     color: black;
 }
+.logo {
+    width: 180px;
+    top: 10;
+    margin-left: 50px;
+}
 /*NAVIGATION START*/
 
 .navBar {
     width: 68%;
-    height: 30px;
+    height: 120px;
     margin: 0 auto;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
