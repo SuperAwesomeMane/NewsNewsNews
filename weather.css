@@ -20,6 +20,10 @@
     margin: 2px;
 }
 
+section.weather {
+    width: 100%;
+}
+
 .forecast > p,
 .forecast > p > p {
     margin: 0px;
@@ -36,4 +40,11 @@
     font-style: italic;
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+img.newsImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
