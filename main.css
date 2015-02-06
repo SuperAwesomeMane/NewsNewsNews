@@ -82,7 +82,7 @@ a {
     margin-top: 40px;
     margin-bottom: -30px;
 }
-.mainContent {
+.mainContent{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -295,27 +295,85 @@ a {
     position: relative;
     margin-left: auto;
     margin-right: auto; 
-    width: 754px;
-    height: 503px;
+    width: 704px;
+    height: 470px;
     padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
 }
 
 #worldNews-slideshow > div {
     position: absolute;
-    width: 750px;
+    width: 700px;
 
     /*top: 10px; 
     left: 10px; 
     right: 10px; 
     bottom: 10px; */
-
 }
 
 #worldNews-slideshow div img {
-    width: 750px;
+    width: 700px;
     border: 2px solid black;
+}
 
+
+.worldNews {
+    height: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    width: 70%;
+}
+
+.worldNewsSection {
+    height: auto;
+    font-size: 20px;
+
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.worldNewsSection iframe {
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-top: -230px;
+    margin-left: 550px;
+
+}
+
+.worldNewsSection h3 {
+    text-align: center;
+    color: #1CEA83;
+}
+
+.worldNewsSection p {
+    width: 420px;
+    
+    margin-left: 60px;
+}
+
+.worldNewsSection ul li {
+    float: right;
+    list-style-type: none;
+}
+
+.worldNewsSection ul li img {
+    width: 320px;
+    height: 320px;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 
 /*WORLD NEWWWWS END*/
