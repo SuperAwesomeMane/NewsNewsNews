@@ -13,11 +13,16 @@ a {
     text-decoration: none;
     color: white;
 }
+.logo {
+    width: 180px;
+    top: 10;
+    margin-left: 50px;
+}
 /*NAVIGATION START*/
 
 .navBar {
     width: 50%;
-    height: 30px;
+    height: 120px;
     margin: 0 auto;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -70,15 +75,20 @@ a {
     padding: 0;
     z-index: 1;
     margin-top: 30px;
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 3;
+    padding-bottom: 3;
 }
 .mainContent {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .introSection {
-    width: 25%;
+    width: 30%;
     height: auto;
     font-size: 18px;
     margin-top: 50px;
@@ -87,9 +97,24 @@ a {
     margin-right: 20px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #68E6E2;
+    border: 2px solid #F45959;
     border-radius: 5px;
-    color: white;
+    color: #C4C4C4;
     flex-grow: 1;
+    text-align: center;
+}
+iframe {
+    width: 80%;
+    height: 315px;
+}
+.newsLink {
+    color: #EB981B;
+    font-size: 24px;
+}
+.newsLink:hover {
+    color: #E22323;
+}
+.newsImage {
+    width: 70%;
 }
 /*BODY END*/
